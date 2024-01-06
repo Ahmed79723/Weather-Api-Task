@@ -47,7 +47,7 @@ nav a small {
   background-color: #222530;
 }
 #firstDayMainDeg {
-  font-size: 6.4285714286rem;
+  font-size: 6rem;
   font-weight: 600;
 }
 #firstDayMainDeg .bigO {
@@ -149,4 +149,15 @@ textarea:hover {
 }
 .c-info {
   background-color: #262936;
+}
+/* ~----------------------------------------------------spinner-----------------------------------------------------------  */
+#load{
+  font-size: 70px !important;
+  color: #009ad8 !important;
+}
+.spinIcon{
+width: auto !important;
+height: auto !important;
+top: 50%  !important;
+right: 50% !important;
 }
