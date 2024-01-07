@@ -95,27 +95,27 @@ function displayDay1Data(weatherData) {
     monthNames[convertedDate.getMonth()]
   }</span>
     </div>
-    <div class="card-body">
+    <div class="card-body overflow-hidden">
     <p class="card-text" id="cityName">${weatherData.location.name}</p>
-    <div class="main-display d-flex justify-content-around">
+    <div class="main-display d-flex flex-wrap">
         <span id="firstDayMainDeg" class="position-relative text-nowrap">${
           weatherData.current.temp_c
-        } <span class="bigO position-absolute">o</span>C</span>
-        <img src="https:${
-          weatherData.current.condition.icon
-        }" width="100" alt="${weatherData.current.condition.text} weather Icon">
-    </div>
+        }<span class="bigO position-absolute">o</span>C</span>
+      <div class="imgIcon ms-1 pb-1 d-flex align-self-center">
+        <img src="https:${weatherData.current.condition.icon}" width="90" alt="${weatherData.current.condition.text} weather Icon">
+      </div>
+    </div>       
     <h6 class="text-info">${weatherData.current.condition.text}</h6>
     <div class="imgs-info d-flex justify-content-between pe-5 me-5">
-        <div>
+        <div class="mx-2">
             <img src="imgs/icon-umberella.png" alt="">
             <span>${weatherData.current.humidity}%</span>
         </div>
-        <div>
+        <div class="mx-2">
             <img src="imgs/icon-wind.png" alt="">
             <span>${weatherData.current.wind_kph}km/h</span>
         </div>
-        <div>
+        <div class="mx-2">
             <img src="imgs/icon-compass.png" alt="">
             <span>${weatherData.current.wind_dir}</span>
         </div>

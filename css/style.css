@@ -19,6 +19,7 @@ nav a small {
   background-position: top center;
   background-size: 100% 60%;
   background-repeat: no-repeat;
+ padding-top: 10px !important;
 }
 .search {
   background-color: #1e202b !important;
